@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  minecraft-server:
+    image: itzg/minecraft-bedrock-server
+    env_file: .env
+    ports:
+      - 19132:19132/udp
+    volumes:
+      - ./data:/data
